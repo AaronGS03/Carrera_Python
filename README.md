@@ -52,4 +52,5 @@ Las variables van entre paréntesis tras el %.
 
 Introducción a cadenas de caracteres
 
-Final sesión 1
+Final sesión 1 (18:22)
+
