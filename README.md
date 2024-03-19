@@ -79,5 +79,13 @@ Hice hasta el ejercicio 12. No hubo dudas grandes ni fallos, unicamente si exist
 
 Fin de la Sesión 1 (16:21)
 
+Final día 2
+
+## Día 3 (20/03/2024): 
+
+### Sesión 1 (00:35)
+
+### Contenidos vistos:
+
 
 
