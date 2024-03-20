@@ -54,9 +54,9 @@ Las variables van entre paréntesis tras el %.
 
 Introducción a cadenas de caracteres
 
-Final sesión 1 (18:22)
+###Final sesión 1 (18:22)
 
-Final día 1
+###Final día 1
 
 ## Día 2 (19/03/2024): 
 
@@ -77,9 +77,9 @@ Ahora son 20 ejercicios, los haré todos, estarán en el repositorio, solo pondr
 
 Hice hasta el ejercicio 12. No hubo dudas grandes ni fallos, unicamente si existen ciertas funciones de math, o como son ciertos operadores en python. Los ejercicios son fáciles.
 
-Fin de la Sesión 1 (16:21)
+###Fin de la Sesión 1 (16:21)
 
-Final día 2
+###Final día 2
 
 ## Día 3 (20/03/2024): 
 
@@ -98,3 +98,5 @@ Los videos que quedan son correcciones guiadas de algunos ejercicios
 - Ejercicios de estructura secuencial: Ejercicio XVII
 
 - Ejercicios de estructura secuencial: Ejercicio XVIII
+
+###Final de la Sesión 1 (02:28)
