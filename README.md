@@ -87,5 +87,14 @@ Final día 2
 
 ### Contenidos vistos:
 
+Terminé los ejercicio 12 a 20. Nada que destacar
 
+Los videos que quedan son correcciones guiadas de algunos ejercicios
 
+- Ejercicios de estructura secuencial: Ejercicio X
+
+- Ejercicios de estructura secuencial: Ejercicio XV
+
+- Ejercicios de estructura secuencial: Ejercicio XVII
+
+- Ejercicios de estructura secuencial: Ejercicio XVIII
