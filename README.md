@@ -75,7 +75,7 @@ Ejercicios de estructura secuencial: Ejercicio 3
  
 Ahora son 20 ejercicios, los haré todos, estarán en el repositorio, solo pondré imagenes de lo que sea necesario destacar
 
-Hice hasta el ejercicio 12. No hubo dudas grandes ni fallos, unicamente si existen ciertas funciones de math, o como son ciertos operadores en python. Los ejercicios son fáciles.
+Hice hasta el ejercicio 12. No hubo dudas grandes ni fallos, unicamente si existen ciertas funciones de math, o cómo son ciertos operadores en python. Los ejercicios son fáciles.
 
 ###Fin de la Sesión 1 (16:21)
 
