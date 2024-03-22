@@ -125,5 +125,22 @@ Es curioso como funciona una cosa y no la mencionaron por ahora en el curso; en 
 según cha.isupper, devuelve true o false dependiendo del case de la letra o letras, sin embargo devolvía siempre true. Tuve que ver la solución proporcionada, aunque variaba en la forma de resolver el ejercicio, vi que usaban "cha.upper()" con los paréntesis, y eso me dio a probar cha.isupeer() y eso ya sí que funcionó. Por alguna razón se pueden meter las funciones o métodos de los objetos sin los paréntesis (de hecho vscode autocompleta sin paréntesis) y el código no da error y tira para adelante... No estoy seguro de como funciona, porque al final del día sin los paréntesis estaba devolviendo true de todas formas.
 
 Hice del ejercicio 1 al 7.
+
+- Estructuras de control alternativas: Ejercicio II
+
+- Estructuras de control alternativas: Ejercicio V
+
 ### Fin de la Sesión 1 (19:36)
+
+### Sesión 2 (20:30)
+
+Curso: Python 3 desde cero
+
+#### Contenidos vistos:
+
+- Estructuras de control alternativas: Ejercicio IX
+
+Hice del ejercicio 8 al 11
+
+###Fin de la Sesión 2 (21:25)
 
