@@ -54,13 +54,15 @@ Las variables van entre paréntesis tras el %.
 
 Introducción a cadenas de caracteres
 
-Final sesión 1 (18:22)
+###Final sesión 1 (18:22)
 
-Final día 1
+###Final día 1
 
 ## Día 2 (19/03/2024): 
 
 ### Sesión 1 (14:55)
+
+Curso: Python 3 desde cero
 
 ### Contenidos vistos:
 
@@ -75,17 +77,53 @@ Ejercicios de estructura secuencial: Ejercicio 3
  
 Ahora son 20 ejercicios, los haré todos, estarán en el repositorio, solo pondré imagenes de lo que sea necesario destacar
 
-Hice hasta el ejercicio 12. No hubo dudas grandes ni fallos, unicamente si existen ciertas funciones de math, o como son ciertos operadores en python. Los ejercicios son fáciles.
+Hice hasta el ejercicio 12. No hubo dudas grandes ni fallos, unicamente si existen ciertas funciones de math, o cómo son ciertos operadores en python. Los ejercicios son fáciles.
 
-Fin de la Sesión 1 (16:21)
+###Fin de la Sesión 1 (16:21)
 
-Final día 2
+###Final día 2
 
 ## Día 3 (20/03/2024): 
+
+Curso: Python 3 desde cero
 
 ### Sesión 1 (00:35)
 
 ### Contenidos vistos:
 
+Terminé los ejercicio 12 a 20. Nada que destacar
 
+Los videos que quedan son correcciones guiadas de algunos ejercicios
+
+- Ejercicios de estructura secuencial: Ejercicio X
+
+- Ejercicios de estructura secuencial: Ejercicio XV
+
+- Ejercicios de estructura secuencial: Ejercicio XVII
+
+- Ejercicios de estructura secuencial: Ejercicio XVIII
+
+###Final de la Sesión 1 (02:28)
+
+###Final día 3
+
+## Día 4 (22/03/2024): 
+
+### Sesión 1 (18:26)
+
+Curso: Python 3 desde cero
+
+#### Contenidos vistos:
+
+- Estructuras de control alternativas: Lo único que cabe destacar es que parece que en python no hay switch
+Los siguientes puntos vuelven a ser 20 ejercicios de estructuras de control alternativas, que haré y estarán en el repositorio
+Acabo de darme cuenta de que python no tiene el tipo de dato "char".
+Es curioso como funciona una cosa y no la mencionaron por ahora en el curso; en el ejercicio 6 tenía que comprobar si un caracter está en mayúscula o  en minúscula, para ello hice:
+
+ ![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/60850f0a-1607-492f-8ec4-55086871eeaa)
+
+según cha.isupper, devuelve true o false dependiendo del case de la letra o letras, sin embargo devolvía siempre true. Tuve que ver la solución proporcionada, aunque variaba en la forma de resolver el ejercicio, vi que usaban "cha.upper()" con los paréntesis, y eso me dio a probar cha.isupeer() y eso ya sí que funcionó. Por alguna razón se pueden meter las funciones o métodos de los objetos sin los paréntesis (de hecho vscode autocompleta sin paréntesis) y el código no da error y tira para adelante... No estoy seguro de como funciona, porque al final del día sin los paréntesis estaba devolviendo true de todas formas.
+
+Hice del ejercicio 1 al 7.
+### Fin de la Sesión 1 (19:36)
 
