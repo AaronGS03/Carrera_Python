@@ -9,3 +9,27 @@ Ejemplo:
 
 Introduzca número del dado: 5
 En la cara opuesta está el "dos". """
+
+resultado= int(input("Resultado: "))
+
+error=False
+
+if resultado==1:
+    opuesto="seis"
+elif resultado==2:
+    opuesto="cinco"
+elif resultado==3:
+    opuesto="cuatro"
+elif resultado==4:
+    opuesto="tres"
+elif resultado==5:
+    opuesto="dos"
+elif resultado==6:
+    opuesto="uno"
+else:
+    error=True
+
+if error:
+    print("Error: Numero incorrecto")
+else:
+    print("En la cara opuesta está el:",opuesto)
