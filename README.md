@@ -146,3 +146,32 @@ Hice del ejercicio 8 al 11
 
 ###Final día 4
 
+## Día 5 (30/03/2024): 
+
+### Sesión 1 (23:50)
+
+#### Contenidos vistos:
+
+Terminados ejercicios del 12 al 20
+
+- Estructuras de control alternativas: Ejercicio IX
+
+- Estructuras de control alternativas: Ejercicio XIII
+
+En el ejercicio 17 me doy cuenta por primera vez que declarar una booleana es distino a otros lenguajes, dado que para decir si algo es true o false dinstintas opciones como "0" o "" darán false, pero para declararlo sin más hay que usar var= bool(False) con False o True la primera en mayúscula.
+
+- Estructuras de control repetitivas: While
+
+ ![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/5de43111-7434-4c11-9e0e-4b79483198a5)
+
+- Estructuras de control repetitivas: For
+El for es bastante distinto...
+
+![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/8e6d5ae0-709d-4dff-bce0-edb89674f6d7)
+
+- Uso específico de variables: Contadores, acumuladores e indicadores
+Esta parte es lógica de programación básica.
+
+### Fin de la Sesión 1 (01:04)
+
+### Final día 5 
