@@ -12,15 +12,17 @@ import random
 intentos=10
 num= random.randint(1,100)
 win= False
-while not win and intentos!=0:
-                guess= int(input("Numero?: "))
-                if guess==num:
-                    win=True
-                    print("Acertaste!")
-                elif guess>num:
-                    in
-                    print("Es menor. Te quedan",10-var,"intentos")
-                elif guess<num:
-                    print("Es mayor. Te quedan",10-var,"intentos")
-        if not win:
-            print("El numero era:",num)
+while win==False:
+    intentos-=1
+    guess= int(input("Numero?: "))
+    if guess==num:
+        win=True
+        print("Acertaste en",10-intentos,"intentos!")
+    elif guess>num:
+        print("Es menor. Te quedan",intentos,"intentos")
+    elif guess<num:
+        print("Es mayor. Te quedan",intentos,"intentos")
+    if intentos==0:
+        print("El numero era:",num)
+        intentos=10
+        num=random.randint(1,100)

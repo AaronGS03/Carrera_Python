@@ -175,3 +175,31 @@ Esta parte es lógica de programación básica.
 ### Fin de la Sesión 1 (01:04)
 
 ### Final día 5 
+
+## Día 6 (08/04/2024): 
+
+### Sesión 1 (12:40)
+
+####Contenidos vistos:
+
+Empiezo con los ejercicios de estructuras repetitivas.
+Dado que no me sobra el tiempo, a partir de ahora haré solo parte de los ejercicios.
+- Uso de estructuras repetitivas: Ejercicio I
+- Uso de estructuras repetitivas: Ejercicio III
+
+### Fin de la Sesión 1 (13:10)
+
+### Final día 6 
+
+## Día 7 (09/04/2024): 
+
+### Sesión 1 (15:00)
+
+####Contenidos vistos:
+
+Haciendo ejercicios de estructuras repetitivas 3,5,7,10
+
+### Fin de la Sesión 1 (17:16)
+
+### Final día 7 
+
