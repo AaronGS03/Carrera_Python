@@ -5,5 +5,3 @@ while intento!= cont:
     print("Contraseña incorrecta")
     intento= input("Contraseña: ")
 print("Acceso concedido")
-
-a
