@@ -183,8 +183,11 @@ Esta parte es lógica de programación básica.
 ####Contenidos vistos:
 
 Empiezo con los ejercicios de estructuras repetitivas.
+
 Dado que no me sobra el tiempo, a partir de ahora haré solo parte de los ejercicios.
+
 - Uso de estructuras repetitivas: Ejercicio I
+
 - Uso de estructuras repetitivas: Ejercicio III
 
 ### Fin de la Sesión 1 (13:10)
@@ -203,3 +206,61 @@ Haciendo ejercicios de estructuras repetitivas 3,5,7,10
 
 ### Final día 7 
 
+## Día 8 (12/04/2024): 
+
+### Sesión 1 (8:10)
+
+####Contenidos vistos:
+
+He de decir, que en la empresa que estoy haciendo las prácticas, trabajo con python. Ya estoy desarrollando código, pero creo que no lo voy a publicar por aquí, por si acaso va en contra del contrato de confidencialidad. Pero puedo decir que tengo que hacer un proyecto de 0 en python y que por ahora ya me vi obligado e hice scripts de:
+ - buscar como se programa con multihilo (en proceso)
+ - como se escribe y lee un archivo
+ - obtención de datos del ordenador
+ - creación y control de excepciones
+ - capturar el tráfico de red con pyShark (en proceso)
+ - creación y control de una base de datos con powerBi (en proceso)
+ - programar de forma orientada a objetos. (en proceso) 
+
+La verdad es que python, quitando un par de cosas, es muy fácil de entender y usar, sobretodo con experiencia en programación. Cosas como escribir en archivos es tan sencillo como poner "open( )", y luego un parámetro para escoger lo que hacer con el archivo. No tiene ninguna complicación.
+
+Apartados del curso vistos:
+
+- Tipos de datos secuenciales
+
+-- Cadenas de caracteres
+
+-- Las cadenas de caracteres son inmutables
+
+-- Métodos principales de cadenas
+
+-- Ejercicios de cadenas de caracteres: Ejericicio 2
+
+-- Ejercicios de cadenas de caracteres: Ejericicio 3
+
+-- Ejercicios de cadenas de caracteres: Ejericicio 4
+
+-- Ejercicios de cadenas de caracteres: Ejericicio 9
+
+-- Listas
+
+-- Las listas son mutables
+
+-- Métodos de las listas
+
+-- Tuplas
+
+-- Ejercicios de listas: Ejericicio 1
+
+-- Ejercicios de listas: Ejericicio 3
+
+-- Ejercicios de listas: Ejericicio 8
+
+-- Ejercicios de listas: Ejericicio 10
+
+- Tipos de datos mapas
+
+-- Diccionario
+
+### Fin de la Sesión 1 (--:--)
+
+### Final día 8 
