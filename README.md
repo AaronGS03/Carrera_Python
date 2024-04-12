@@ -198,7 +198,7 @@ Dado que no me sobra el tiempo, a partir de ahora haré solo parte de los ejerci
 
 ### Sesión 1 (15:00)
 
-####Contenidos vistos:
+#### Contenidos vistos:
 
 Haciendo ejercicios de estructuras repetitivas 3,5,7,10
 
@@ -210,7 +210,7 @@ Haciendo ejercicios de estructuras repetitivas 3,5,7,10
 
 ### Sesión 1 (8:10)
 
-####Contenidos vistos:
+#### Contenidos vistos:
 
 He de decir, que en la empresa que estoy haciendo las prácticas, trabajo con python. Ya estoy desarrollando código, pero creo que no lo voy a publicar por aquí, por si acaso va en contra del contrato de confidencialidad. Pero puedo decir que tengo que hacer un proyecto de 0 en python y que por ahora ya me vi obligado e hice scripts de:
  - buscar como se programa con multihilo (en proceso)
