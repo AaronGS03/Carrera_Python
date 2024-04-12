@@ -213,15 +213,18 @@ Haciendo ejercicios de estructuras repetitivas 3,5,7,10
 #### Contenidos vistos:
 
 He de decir, que en la empresa que estoy haciendo las prácticas, trabajo con python. Ya estoy desarrollando código, pero creo que no lo voy a publicar por aquí, por si acaso va en contra del contrato de confidencialidad. Pero puedo decir que tengo que hacer un proyecto de 0 en python y que por ahora ya me vi obligado e hice scripts de:
- - buscar como se programa con multihilo (en proceso)
+ - haciendo uso de multihilo (en proceso)
+ - creación de funciones (def funcion():)
  - como se escribe y lee un archivo
  - obtención de datos del ordenador
  - creación y control de excepciones
  - capturar el tráfico de red con pyShark (en proceso)
  - creación y control de una base de datos con powerBi (en proceso)
- - programar de forma orientada a objetos. (en proceso) 
+ - programar de forma orientada a objetos. (en proceso)
 
-La verdad es que python, quitando un par de cosas, es muy fácil de entender y usar, sobretodo con experiencia en programación. Cosas como escribir en archivos es tan sencillo como poner "open( )", y luego un parámetro para escoger lo que hacer con el archivo. No tiene ninguna complicación.
+ Mis fuentes por ahora fueron StackOverflow, W3Cschools, documentación de Python, Medium.com...
+
+La verdad es que python, quitando un par de cosas, es muy fácil de entender y usar, sobretodo con experiencia en programación. Cosas como escribir en archivos es tan sencillo como poner "open( )", y luego un parámetro para escoger lo que hacer con el archivo. No tiene ninguna complicación. Mi objetivo ahora es alcanzar lo antes posible los cursos que tengan información relevante a las partes que tengo en proceso ahora mismo para hacerlas de forma adecuada, por lo tanto reduciré el número de ejercicios opcionales y me pararé menos a comentar detalles.
 
 Apartados del curso vistos:
 
@@ -279,6 +282,14 @@ Apartados del curso vistos:
 
 -- Introducción a las funciones
 
-### Fin de la Sesión 1 (--:--)
+-- Funciones recursivas
+
+-- Ejercicios con funciones: Ejericicio 2
+
+-- Ejercicios con funciones: Ejericicio 5
+
+-- Ejercicios con funciones: Ejericicio 11
+
+### Fin de la Sesión 1 (14:20)
 
 ### Final día 8 
