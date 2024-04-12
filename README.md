@@ -274,6 +274,17 @@ Apartados del curso vistos:
 
 -- Excepciones
 
+```python 
+ try:
+   print (10/int(cad))
+ except ValueError:
+   print("No se puede convertir a entero")
+ except ZeroDivisionError:
+   print("No se puede dividir por cero")
+ else:
+   print("Otro error")
+```
+
 - Introducción a los módulos
 
 -- Introducción a los módulos
@@ -291,5 +302,63 @@ Apartados del curso vistos:
 -- Ejercicios con funciones: Ejericicio 11
 
 ### Fin de la Sesión 1 (14:20)
+
+### Sesión 2 (15:14)
+
+#### Contenidos vistos:
+
+- Programación orientada a objetos
+
+-- Introducción a la programación orientada a objetos
+
+Esta parte es un poco rara; se empieza poniendo class nombre_clase(), this viene siendo self, y el constructor es una función __init__():
+
+```python
+import math
+class punto():
+""" Representación de un punto en el plano, los atributos son x e y
+que representan los valores de las coordenadas cartesianas."""
+
+def __init__(self,x=0,y=0):
+    self.x=x
+    self.y=y
+
+def mostrar(self):
+    return str(self.x)+":"+str(self.y)
+
+def distancia(self, otro):
+    """ Devuelve la distancia entre ambos puntos. """
+    dx = self.x - otro.x
+    dy = self.y - otro.y
+    return math.sqrt((dx*dx + dy*dy))
+```
+
+-- Encapsulamiento en la programación orientada a objetos
+
+A la hora de crear objetos, las propiedades privados se establecen como _propiedad y para definir setters y getter:
+
+```python
+
+class circulo():
+
+def __init__(self,radio):
+    self.radio=radio
+
+#getter
+@property
+def radio(self):
+    return self._radio
+
+#setter
+@radio.setter
+def radio(self,radio)
+    if radio>=0:
+        self._radio=radio
+    else:
+        print("Radio debe ser positivo")
+        self._radio=0
+```
+
+### Fin de la Sesión 2 (16:20)
 
 ### Final día 8 
