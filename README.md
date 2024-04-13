@@ -56,7 +56,7 @@ Introducción a cadenas de caracteres
 
 ###Final sesión 1 (18:22)
 
-###Final día 1
+### Final día 1
 
 ## Día 2 (19/03/2024): 
 
@@ -79,9 +79,9 @@ Ahora son 20 ejercicios, los haré todos, estarán en el repositorio, solo pondr
 
 Hice hasta el ejercicio 12. No hubo dudas grandes ni fallos, unicamente si existen ciertas funciones de math, o cómo son ciertos operadores en python. Los ejercicios son fáciles.
 
-###Fin de la Sesión 1 (16:21)
+### Fin de la Sesión 1 (16:21)
 
-###Final día 2
+### Final día 2
 
 ## Día 3 (20/03/2024): 
 
@@ -103,9 +103,9 @@ Los videos que quedan son correcciones guiadas de algunos ejercicios
 
 - Ejercicios de estructura secuencial: Ejercicio XVIII
 
-###Final de la Sesión 1 (02:28)
+### Final de la Sesión 1 (02:28)
 
-###Final día 3
+### Final día 3
 
 ## Día 4 (22/03/2024): 
 
@@ -142,9 +142,9 @@ Curso: Python 3 desde cero
 
 Hice del ejercicio 8 al 11
 
-###Fin de la Sesión 2 (21:25)
+### Fin de la Sesión 2 (21:25)
 
-###Final día 4
+### Final día 4
 
 ## Día 5 (30/03/2024): 
 
@@ -175,3 +175,190 @@ Esta parte es lógica de programación básica.
 ### Fin de la Sesión 1 (01:04)
 
 ### Final día 5 
+
+## Día 6 (08/04/2024): 
+
+### Sesión 1 (12:40)
+
+#### Contenidos vistos:
+
+Empiezo con los ejercicios de estructuras repetitivas.
+
+Dado que no me sobra el tiempo, a partir de ahora haré solo parte de los ejercicios.
+
+- Uso de estructuras repetitivas: Ejercicio I
+
+- Uso de estructuras repetitivas: Ejercicio III
+
+### Fin de la Sesión 1 (13:10)
+
+### Final día 6 
+
+## Día 7 (09/04/2024): 
+
+### Sesión 1 (15:00)
+
+#### Contenidos vistos:
+
+Haciendo ejercicios de estructuras repetitivas 3,5,7,10
+
+### Fin de la Sesión 1 (17:16)
+
+### Final día 7 
+
+## Día 8 (12/04/2024): 
+
+### Sesión 1 (8:10)
+
+#### Contenidos vistos:
+
+He de decir, que en la empresa que estoy haciendo las prácticas, trabajo con python. Ya estoy desarrollando código, pero creo que no lo voy a publicar por aquí, por si acaso va en contra del contrato de confidencialidad. Pero puedo decir que tengo que hacer un proyecto de 0 en python y que por ahora ya me vi obligado e hice scripts de:
+ - haciendo uso de multihilo (en proceso)
+ - creación de funciones (def funcion():)
+ - como se escribe y lee un archivo
+ - obtención de datos del ordenador
+ - creación y control de excepciones
+ - capturar el tráfico de red con pyShark (en proceso)
+ - creación y control de una base de datos con powerBi (en proceso)
+ - programar de forma orientada a objetos. (en proceso)
+
+ Mis fuentes por ahora fueron StackOverflow, W3Cschools, documentación de Python, Medium.com...
+
+La verdad es que python, quitando un par de cosas, es muy fácil de entender y usar, sobretodo con experiencia en programación. Cosas como escribir en archivos es tan sencillo como poner "open( )", y luego un parámetro para escoger lo que hacer con el archivo. No tiene ninguna complicación. Mi objetivo ahora es alcanzar lo antes posible los cursos que tengan información relevante a las partes que tengo en proceso ahora mismo para hacerlas de forma adecuada, por lo tanto reduciré el número de ejercicios opcionales y me pararé menos a comentar detalles.
+
+Apartados del curso vistos:
+
+- Tipos de datos secuenciales
+
+-- Cadenas de caracteres
+
+-- Las cadenas de caracteres son inmutables
+
+-- Métodos principales de cadenas
+
+-- Ejercicios de cadenas de caracteres: Ejericicio 2
+
+-- Ejercicios de cadenas de caracteres: Ejericicio 3
+
+-- Ejercicios de cadenas de caracteres: Ejericicio 4
+
+-- Ejercicios de cadenas de caracteres: Ejericicio 9
+
+-- Listas
+
+-- Las listas son mutables
+
+-- Métodos de las listas
+
+-- Tuplas
+
+-- Ejercicios de listas: Ejericicio 1
+
+-- Ejercicios de listas: Ejericicio 3
+
+-- Ejercicios de listas: Ejericicio 8
+
+-- Ejercicios de listas: Ejericicio 10
+
+- Tipos de datos mapas
+
+-- Diccionario
+
+-- Métodos principales de diccionarios
+
+-- Ejercicios de diccionarios: Ejericicio 2
+
+-- Ejercicios de diccionarios: Ejericicio 3
+
+- Excepciones
+
+-- Excepciones
+
+```python 
+ try:
+   print (10/int(cad))
+ except ValueError:
+   print("No se puede convertir a entero")
+ except ZeroDivisionError:
+   print("No se puede dividir por cero")
+ else:
+   print("Otro error")
+```
+
+- Introducción a los módulos
+
+-- Introducción a los módulos
+
+- Programación estructurada
+
+-- Introducción a las funciones
+
+-- Funciones recursivas
+
+-- Ejercicios con funciones: Ejericicio 2
+
+-- Ejercicios con funciones: Ejericicio 5
+
+-- Ejercicios con funciones: Ejericicio 11
+
+### Fin de la Sesión 1 (14:20)
+
+### Sesión 2 (15:14)
+
+#### Contenidos vistos:
+
+- Programación orientada a objetos
+
+-- Introducción a la programación orientada a objetos
+
+Esta parte es un poco rara; se empieza poniendo class nombre_clase(), this viene siendo self, y el constructor es una función __init__():
+
+```python
+import math
+class punto():
+""" Representación de un punto en el plano, los atributos son x e y
+que representan los valores de las coordenadas cartesianas."""
+
+def __init__(self,x=0,y=0):
+    self.x=x
+    self.y=y
+
+def mostrar(self):
+    return str(self.x)+":"+str(self.y)
+
+def distancia(self, otro):
+    """ Devuelve la distancia entre ambos puntos. """
+    dx = self.x - otro.x
+    dy = self.y - otro.y
+    return math.sqrt((dx*dx + dy*dy))
+```
+
+-- Encapsulamiento en la programación orientada a objetos
+
+A la hora de crear objetos, las propiedades privados se establecen como _propiedad y para definir setters y getter:
+
+```python
+
+class circulo():
+
+def __init__(self,radio):
+    self.radio=radio
+
+#getter
+@property
+def radio(self):
+    return self._radio
+
+#setter
+@radio.setter
+def radio(self,radio)
+    if radio>=0:
+        self._radio=radio
+    else:
+        print("Radio debe ser positivo")
+        self._radio=0
+```
+
+### Fin de la Sesión 2 (16:20)
+
+### Final día 8 
