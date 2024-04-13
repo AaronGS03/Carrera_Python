@@ -212,15 +212,16 @@ Haciendo ejercicios de estructuras repetitivas 3,5,7,10
 
 #### Contenidos vistos:
 
-He de decir, que en la empresa que estoy haciendo las prácticas, trabajo con python. Ya estoy desarrollando código, pero creo que no lo voy a publicar por aquí, por si acaso va en contra del contrato de confidencialidad. Pero puedo decir que tengo que hacer un proyecto de 0 en python y que por ahora ya me vi obligado e hice scripts de:
- - haciendo uso de multihilo (en proceso)
+He de decir, que en la empresa que estoy haciendo las prácticas, trabajo con python. Ya estoy desarrollando código, pero creo que no lo voy a publicar por aquí, por si acaso va en contra del contrato de confidencialidad. Pero puedo decir que tengo que hacer un proyecto de 0 en python y que por ahora ya me vi obligado a buscar información y hacer scripts de:
  - creación de funciones (def funcion():)
+ - haciendo uso de multihilo (en proceso)
  - como se escribe y lee un archivo
  - obtención de datos del ordenador
  - creación y control de excepciones
  - capturar el tráfico de red con pyShark (en proceso)
  - creación y control de una base de datos con powerBi (en proceso)
  - programar de forma orientada a objetos. (en proceso)
+ - creación de archivos ejecutables .exe (con pyinstaller y autopy2exe)
 
  Mis fuentes por ahora fueron StackOverflow, W3Cschools, documentación de Python, Medium.com...
 
@@ -362,3 +363,6 @@ def radio(self,radio)
 ### Fin de la Sesión 2 (16:20)
 
 ### Final día 8 
+
+## Bonus (13/04/2024)
+
