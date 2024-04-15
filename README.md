@@ -451,3 +451,40 @@ set={[1,1,1,2,3,3,3]}
 ### Fin de la Sesión 1 (10:10)
 
 ### Final día 9
+
+## Bonus (15/04/2024)
+Hoy en las prácticas seguí investigando como capturar el tráfico de red. Encontré una forma usando Scapy. Paso el test que hice para probarlo:
+
+```python
+from scapy.all import *
+
+def sniffPackets(packet):
+    if "IP" in packet:
+        time= packet.time
+        src= packet["IP"].src
+        dst= packet["IP"].dst
+        protoNum = packet["IP"].proto
+        
+        if protoNum==6:
+            proto= "TCP"
+        elif protoNum==17:
+            proto= "UDP"
+
+        length= len(packet)
+        info= packet.summary()
+    elif "Ether" in packet:
+        time= packet.time
+        src= packet["Ether"].src
+        dst= packet["Ether"].dst
+        proto = packet["Ether"].type
+        length= len(packet)
+        info= packet.summary()
+        
+    print("Time:",time,"Source:",src,"Destination:",dst,"Protocol:",proto,"Length:",length,"Info:",info)
+
+sniff(prn=sniffPackets, count=3)
+```
+
+Devuelve:
+
+![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/bccd3e65-26aa-4f65-abb7-01a6f99dd3c8)
