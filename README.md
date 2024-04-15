@@ -374,30 +374,6 @@ def radio(self,radio)
 
 ### Final día 8 
 
-## Día 9 (15/04/2024): 
-
-### Sesión 1 (7:50)
-
-Curso:  Python 3 desde cero
-
-#### Contenidos vistos:
-
-- Herencia y delegación
-
-- Ejercicios de programación orientada a objetos
-
-- Hice el examen, ya está aprobado
-
-Curso: Python 3
-
-Este nuevo curso contiene contenidos muy similares al anterior, ya que es la introducción más conceptos avanzados, así que me limitaré a comentar el contenido nuevo:
-
-Se podría hacer una alternativa de la siguiente forma:
-
-```python
-saludo="hola" if lang=="es" else "hi"
-```
-- Tipos de datos binarios: bytes, bytearray
 ## Bonus (13/04/2024)
 
 Hoy estaba jugando a Jump King, un videojuego de plataformas que se basa en hacer una serie de saltos precisos para alcanzar a una princesa en lo alto de una torre. El principal punto de este juego es el hecho de que no hay checkpoints, todo el progreso (y su pérdida) se guarda. Está diseñado para ser difícil y frustrante. Pues resulta que se le puede hacer savescum, un proceso por el cual puedes modificar el archivo de guardado (de la ultima posición del personaje). El proceso viene siendo hacer una copia del archivo de guardado "combined.sav" en un punto que quieras repetir, y cuando pierdas progreso, simplemente sustituyes el save original por la copia (se debe cerrar el juego previamente).
@@ -437,4 +413,27 @@ except IOError as e:
 
 También, cree un archivo ejecutable .exe, poniendome en el directorio del script desde una consola de comandos y ejecutando el comando "pyinstaller autoSave.exe", lo que genera las carpetas "dist" y "build". En dist se encuentra el ejecutable
 
+## Día 9 (15/04/2024): 
 
+### Sesión 1 (7:50)
+
+Curso:  Python 3 desde cero
+
+#### Contenidos vistos:
+
+- Herencia y delegación
+
+- Ejercicios de programación orientada a objetos
+
+- Hice el examen, ya está aprobado
+
+Curso: Python 3
+
+Este nuevo curso contiene contenidos muy similares al anterior, ya que es la introducción más conceptos avanzados, así que me limitaré a comentar el contenido nuevo:
+
+Se podría hacer una alternativa de la siguiente forma:
+
+```python
+saludo="hola" if lang=="es" else "hi"
+```
+- Tipos de datos binarios: bytes, bytearray
