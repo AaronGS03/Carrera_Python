@@ -447,3 +447,7 @@ set={[1,1,1,2,3,3,3]}
 ```
 
 - Tipos de datos: iterador y generador
+
+### Fin de la Sesión 1 (10:10)
+
+### Final día 9
