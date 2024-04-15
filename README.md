@@ -220,15 +220,16 @@ Curso:  Python 3 desde cero
 
 #### Contenidos vistos:
 
-He de decir, que en la empresa que estoy haciendo las prácticas, trabajo con python. Ya estoy desarrollando código, pero creo que no lo voy a publicar por aquí, por si acaso va en contra del contrato de confidencialidad. Pero puedo decir que tengo que hacer un proyecto de 0 en python y que por ahora ya me vi obligado e hice scripts de:
- - haciendo uso de multihilo (en proceso)
+He de decir, que en la empresa que estoy haciendo las prácticas, trabajo con python. Ya estoy desarrollando código, pero creo que no lo voy a publicar por aquí, por si acaso va en contra del contrato de confidencialidad. Pero puedo decir que tengo que hacer un proyecto de 0 en python y que por ahora ya me vi obligado a buscar información y hacer scripts de:
  - creación de funciones (def funcion():)
+ - haciendo uso de multihilo (en proceso)
  - como se escribe y lee un archivo
  - obtención de datos del ordenador
  - creación y control de excepciones
  - capturar el tráfico de red con pyShark (en proceso)
  - creación y control de una base de datos con powerBi (en proceso)
  - programar de forma orientada a objetos. (en proceso)
+ - creación de archivos ejecutables .exe (con pyinstaller y autopy2exe)
 
  Mis fuentes por ahora fueron StackOverflow, W3Cschools, documentación de Python, Medium.com...
 
@@ -397,3 +398,43 @@ Se podría hacer una alternativa de la siguiente forma:
 saludo="hola" if lang=="es" else "hi"
 ```
 - Tipos de datos binarios: bytes, bytearray
+## Bonus (13/04/2024)
+
+Hoy estaba jugando a Jump King, un videojuego de plataformas que se basa en hacer una serie de saltos precisos para alcanzar a una princesa en lo alto de una torre. El principal punto de este juego es el hecho de que no hay checkpoints, todo el progreso (y su pérdida) se guarda. Está diseñado para ser difícil y frustrante. Pues resulta que se le puede hacer savescum, un proceso por el cual puedes modificar el archivo de guardado (de la ultima posición del personaje). El proceso viene siendo hacer una copia del archivo de guardado "combined.sav" en un punto que quieras repetir, y cuando pierdas progreso, simplemente sustituyes el save original por la copia (se debe cerrar el juego previamente).
+
+No suelo hacer trampas en este tipo de juegos, porque pierde el propósito del reto, sin embargo, pensé que sería muy fácil hacer un script en python, así que lo hice para probarme. Así también queda por aquí.
+
+El resultado está en la carpeta "autoSaveScum", y tiene un script muy básico (autoSave.py):
+```python
+import shutil, psutil, os
+from pathlib import Path
+
+#Busca y termina el proceso del juego, por su nombre
+for proc in psutil.process_iter():
+    if proc.name() == "JumpKing.exe":
+        print("Cerrando JumpKing")
+        proc.kill()
+
+try:
+    #Cambia los archivos
+
+    print("Cambiando partida guardada")
+    shutil.copyfile(str(Path.home())+"\\Desktop\\Nueva carpeta\\combined.sav","C:\\GOG Games\\Jump King\\Content\\Saves\\combined.sav")
+    
+    try:
+        #Ejecuta el juego
+        
+        print("Ejecutando JumpKing")
+        os.chdir("C:\\GOG Games\\Jump King")
+        os.startfile("C:\\GOG Games\\Jump King\\JumpKing.exe")
+    except:
+        print("Error al ejecutar JumpKing")
+        
+except IOError as e:
+    print("Error al copiar:",e)
+
+```
+
+También, cree un archivo ejecutable .exe, poniendome en el directorio del script desde una consola de comandos y ejecutando el comando "pyinstaller autoSave.exe", lo que genera las carpetas "dist" y "build". En dist se encuentra el ejecutable
+
+
