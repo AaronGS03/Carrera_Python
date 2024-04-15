@@ -488,3 +488,42 @@ sniff(prn=sniffPackets, count=3)
 Devuelve:
 
 ![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/bccd3e65-26aa-4f65-abb7-01a6f99dd3c8)
+
+También hice una prueba para ver como funcionaba el threading:
+
+```python
+import threading
+import time
+
+# Variable compartida
+shared_variable = 0
+
+# Función para incrementar la variable
+def incrementar():
+    global shared_variable
+    while shared_variable < 100:
+        shared_variable += 1
+        print(f"Hilo 1: {shared_variable}")
+
+# Crear un segundo hilo para decrementar la variable
+def decrementar():
+    global shared_variable
+    while shared_variable > -100:
+        shared_variable -= 1
+        print(f"Hilo 2: {shared_variable}")
+
+# Crear los hilos
+mi_hilo1 = threading.Thread(target=incrementar)
+mi_hilo2 = threading.Thread(target=decrementar)
+
+# Iniciar los hilos
+mi_hilo1.start()
+mi_hilo2.start()
+
+# Esperar a que ambos hilos terminen
+mi_hilo1.join()
+mi_hilo2.join()
+
+print("Ambos hilos han terminado")
+
+```
