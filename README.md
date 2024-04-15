@@ -437,3 +437,13 @@ Se podría hacer una alternativa de la siguiente forma:
 saludo="hola" if lang=="es" else "hi"
 ```
 - Tipos de datos binarios: bytes, bytearray
+
+- Tipos de datos conjuntos: set, frozenset:
+
+```python
+set={[1,1,1,2,3,3,3]}
+#devuelve: {1,2,3}
+#set es mutable, frozenset es inmutable
+```
+
+- Tipos de datos: iterador y generador
