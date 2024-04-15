@@ -150,6 +150,8 @@ Hice del ejercicio 8 al 11
 
 ### Sesión 1 (23:50)
 
+Curso:  Python 3 desde cero
+
 #### Contenidos vistos:
 
 Terminados ejercicios del 12 al 20
@@ -180,6 +182,8 @@ Esta parte es lógica de programación básica.
 
 ### Sesión 1 (12:40)
 
+Curso:  Python 3 desde cero
+
 #### Contenidos vistos:
 
 Empiezo con los ejercicios de estructuras repetitivas.
@@ -198,6 +202,8 @@ Dado que no me sobra el tiempo, a partir de ahora haré solo parte de los ejerci
 
 ### Sesión 1 (15:00)
 
+Curso:  Python 3 desde cero
+
 #### Contenidos vistos:
 
 Haciendo ejercicios de estructuras repetitivas 3,5,7,10
@@ -209,6 +215,8 @@ Haciendo ejercicios de estructuras repetitivas 3,5,7,10
 ## Día 8 (12/04/2024): 
 
 ### Sesión 1 (8:10)
+
+Curso:  Python 3 desde cero
 
 #### Contenidos vistos:
 
@@ -305,6 +313,8 @@ Apartados del curso vistos:
 
 ### Sesión 2 (15:14)
 
+Curso:  Python 3 desde cero
+
 #### Contenidos vistos:
 
 - Programación orientada a objetos
@@ -362,3 +372,28 @@ def radio(self,radio)
 ### Fin de la Sesión 2 (16:20)
 
 ### Final día 8 
+
+## Día 9 (15/04/2024): 
+
+### Sesión 1 (7:50)
+
+Curso:  Python 3 desde cero
+
+#### Contenidos vistos:
+
+- Herencia y delegación
+
+- Ejercicios de programación orientada a objetos
+
+- Hice el examen, ya está aprobado
+
+Curso: Python 3
+
+Este nuevo curso contiene contenidos muy similares al anterior, ya que es la introducción más conceptos avanzados, así que me limitaré a comentar el contenido nuevo:
+
+Se podría hacer una alternativa de la siguiente forma:
+
+```python
+saludo="hola" if lang=="es" else "hi"
+```
+- Tipos de datos binarios: bytes, bytearray
