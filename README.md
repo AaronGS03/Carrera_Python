@@ -582,4 +582,3 @@ por ejemplo, uno de los scripts almacena la informacion del comando "wmic qfe li
 ![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/14791c44-3c36-4d9d-b2df-7eca96ab5613)
 
 
-![alt text](image.png)
