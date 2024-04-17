@@ -535,3 +535,48 @@ print("Ambos hilos han terminado")
 Curso:  Python 3
 
 #### Contenidos vistos:
+
+- Trabajar con ficheros
+
+-- Lectura y escritura de ficheros:
+
+```python
+#w=overwrite, r=read, a=append, w+=write+read, a+=append+read...
+f=open("lecturaEscrituraFicheros/ejemplo1.txt","w")
+f.write("Hey hey o/")
+f.close()
+
+#en una linea:
+with open("lecturaEscrituraFicheros/ejemplo1.txt","r") as archivo:
+    contenido=archivo.read()
+print(contenido)
+```
+
+-- Gestionar ficheros CSV:
+
+```python
+import csv
+fichero=open("lecturaEscrituraFicheros/ejemplo2.csv","r")
+
+#Para evitar conflicto con las comillas de los datos
+contenido=csv.reader(fichero,quotechar='"')
+
+for row in contenido:
+    print(row)
+
+#Devuelve:
+""" 
+['AÃ±o', 'Marca', 'Modelo', 'DescripciÃ³n', 'Precio']
+['1997', 'Ford', 'E350', 'ac, abs, moon', '3000.00']
+['1999', 'Chevy', 'Venture "Extended Edition"', '', '4900.00']
+['1999', 'Chevy', 'Venture "Extended Edition, Very Large"', '', '5000.00']
+['1996', 'Jeep', 'Grand Cherokee', 'MUST SELL!]
+[air, moon roof, loaded', '4799.00'] """
+```
+
+Esto mola, porque con csv se trabaja en powerBI, un servio de análisis de datos de microsoft que usan muchas empresas, yo tendré que usarlo seguramente durante las prácticas, y por ahora ya hice unos scripts que recogían información y la pasaban a csv, para más adelante analizarla y compararla.
+
+Mini Bonus:
+por ejemplo, uno de los scripts almacena la informacion del comando "wmic qfe list" en formato csv, la cual luego se puede organizar muy facilmente en tablas en excel
+
+![alt text](image.png)
