@@ -527,3 +527,11 @@ mi_hilo2.join()
 print("Ambos hilos han terminado")
 
 ```
+
+## Día 10 (17/04/2024): 
+
+### Sesión 1 (8:00)
+
+Curso:  Python 3
+
+#### Contenidos vistos:
