@@ -583,3 +583,5 @@ por ejemplo, uno de los scripts almacena la informacion del comando "wmic qfe li
 
 
 -- Gestión de ficheros json
+
+### Final sesión 1 (11:12)
