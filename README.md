@@ -585,3 +585,15 @@ por ejemplo, uno de los scripts almacena la informacion del comando "wmic qfe li
 -- Gestión de ficheros json
 
 ### Final sesión 1 (11:12)
+
+## Día 11 (19/04/2024): 
+
+### Sesión 1 (12:00)
+
+Curso:  Python 3
+
+#### Contenidos vistos:
+
+- Programación estructurada y modular
+
+### Final sesión 1 (13:34)
