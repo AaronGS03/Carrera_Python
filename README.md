@@ -586,14 +586,18 @@ por ejemplo, uno de los scripts almacena la informacion del comando "wmic qfe li
 
 ### Final sesión 1 (11:12)
 
-## Día 11 (19/04/2024): 
+## Día 11 (21/04/2024): 
 
-### Sesión 1 (12:00)
+### Sesión 1 (20:00)
 
 Curso:  Python 3
 
 #### Contenidos vistos:
 
 - Programación estructurada y modular
+
+- Programación orientada a objetos
+
+Ya hice el examen, está aprobado
 
 ### Final sesión 1 (13:34)
