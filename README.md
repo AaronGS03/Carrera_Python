@@ -601,3 +601,24 @@ Curso:  Python 3
 Ya hice el examen, está aprobado
 
 ### Final sesión 1 (13:34)
+
+## Bonus (23/04/2024)
+
+Hoy empecé a trastear con power BI en las prácticas, es básicamente el tutroial de Guy In a Cube (https://www.youtube.com/watch?v=3_DOF_qjguA), dejo los resultados:
+
+Esto es usando una muestra de datos mediante:
+```python
+import seaborn as sns
+tips = sns.load_dataset("tips")
+```
+![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/d5a90208-3617-40dd-b836-d10027e11018)
+
+Gráfico de anillos de power bi 
+
+![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/becb4993-eb28-410f-a722-6916932581d9)
+
+Gráfico externo a power bi (swarm, de seaborn):
+
+![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/3ad56d23-da28-4452-84af-eb5dfe4c9950)
+
+
