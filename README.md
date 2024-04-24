@@ -622,14 +622,14 @@ Gráfico externo a power bi (swarm, de seaborn):
 ![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/3ad56d23-da28-4452-84af-eb5dfe4c9950)
 
 
-### Final sesión 1 (08:40)
-
 ## Día 12 (24/04/2024): 
 
-### Sesión 1 (20:00)
+### Sesión 1 (08:40)
 
 Taller:  Consumo de servicios Restful con Python requests
 
 Taller: Trabajando la concurrencia en Python
 
 Este último taller resultó bastante más complicado de seguir que el resto de lecciones... Quizá porque esté explicando lo que hace sobre dos ejemplos en proyectos ya hechos, con conceptos y haciendo uso de técnicas muy avanzadas... Además lo hace para casos en los que se tienen que realizar operaciones o programas muy repetitivas, llamadas a datos de una api o múltiples cálculos con datos seguidos, para lo que usa ThreadPoolExecutor y ProcessPoolExecutor. Durante mi tiempo en prácticas me encontré con la situación en la que ejecutaba un programa (la captura de tráfico) y quería que esta funcionase al mismo tiempo que el resto del programa, para no tener que esperar para que acabase (5 min) para luego continuar... Para esto, utilicé el modulo subprocess, con el que usando subprocess.run o subprocess.popen puedes ejecutar el script de python que quieras y usando .wait detener la ejecución del resto del script mientras no haya acabado el subproceso o no ponerlo y eso hará que se siga ejecutando en segundo plano. También hice esa prueba de hilos usando el módulo Threading, y parecía funcionar adecuadamente, lo cual me choca con algunas cosas que dice en el taller y me extraña que lo haga usando estos comandos en concreto... Pero veo la utilidad de lo que hizo, en concreto, para este tipo de llamadas repetitivas y cálculos masivos entiendo como podría usar el (Thread/Process)PoolExecutor, por otra parte, está más guiado hacia el intercambio de datos entre funciones y programas, lo cual con subprocess resulta más complicado o limitado. (For the record, le pregunté a mi jefe con respecto al multihilo si lo estaba haciendo bien usando subprocess.run() porque queríamos usar multihilo y pensé que no lo estaba usando o que igual esa forma no servía, y me dijo que sí; que valía sin problema, que era otra forma de hacer multihilo) 
+
+### Final sesión 1 (11:40)
