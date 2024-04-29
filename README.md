@@ -632,4 +632,24 @@ Taller: Trabajando la concurrencia en Python
 
 Este último taller resultó bastante más complicado de seguir que el resto de lecciones... Quizá porque esté explicando lo que hace sobre dos ejemplos en proyectos ya hechos, con conceptos y haciendo uso de técnicas muy avanzadas... Además lo hace para casos en los que se tienen que realizar operaciones o programas muy repetitivas, llamadas a datos de una api o múltiples cálculos con datos seguidos, para lo que usa ThreadPoolExecutor y ProcessPoolExecutor. Durante mi tiempo en prácticas me encontré con la situación en la que ejecutaba un programa (la captura de tráfico) y quería que esta funcionase al mismo tiempo que el resto del programa, para no tener que esperar para que acabase (5 min) para luego continuar... Para esto, utilicé el modulo subprocess, con el que usando subprocess.run o subprocess.popen puedes ejecutar el script de python que quieras y usando .wait detener la ejecución del resto del script mientras no haya acabado el subproceso o no ponerlo y eso hará que se siga ejecutando en segundo plano. También hice esa prueba de hilos usando el módulo Threading, y parecía funcionar adecuadamente, lo cual me choca con algunas cosas que dice en el taller y me extraña que lo haga usando estos comandos en concreto... Pero veo la utilidad de lo que hizo, en concreto, para este tipo de llamadas repetitivas y cálculos masivos entiendo como podría usar el (Thread/Process)PoolExecutor, por otra parte, está más guiado hacia el intercambio de datos entre funciones y programas, lo cual con subprocess resulta más complicado o limitado. (For the record, le pregunté a mi jefe con respecto al multihilo si lo estaba haciendo bien usando subprocess.run() porque queríamos usar multihilo y pensé que no lo estaba usando o que igual esa forma no servía, y me dijo que sí; que valía sin problema, que era otra forma de hacer multihilo) 
 
+Edit (29/04/2024 11:50):
+Tras intentar hacer el ejecutable para la aplicación en las prácticas me encontré con un problema a la hora de las dependencias con los archivos que ejecuto en segundo plano con subprocess al crear el .exe. Por lo tanto decidí cambiar el approach a la forma en la que estaba estructurando el código y usé threads. Revisé la explicación del taller de concurrencia y ahora ya lo comprendo mejor; Thread funciona igual a bajo nivel, pero THreadPoolExecutor es una herramienta para facilitar el proceso, que basicamente se encarga de hacer los joins, waits y asignación de hilos necesasrios de forma automática; entonces yo solo le digo la cantidad de workers (hilos) o no para que haga cpu_count+4 procesos simultaneos y queda todo muy sencillo y compacto:
+´´´python
+with ThreadPoolExecutor(max_workers=3) as executor:
+        print("Comenzando captura de tráfico en segundo plano...")
+        executor.submit(trafficScapy.start)
+        time.sleep(1)
+
+        if(is_admin):
+            print("Comenzando recolección de datos de controles de acceso direccional (DACL) en segundo plano...\nEste proceso tardará bastante.")
+            executor.submit(listasCAD.start)
+            time.sleep(2)
+        
+        print("Comenzando lectura de información del sistema")
+        executor.submit(sysinfo.sysInfo.start)
+
+        print("Recogiendo actualizaciones de SO y parches")
+        executor.submit(sysinfo.sysinfoOSupd.start)
+´´´
+
 ### Final sesión 1 (11:40)
