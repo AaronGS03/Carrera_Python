@@ -634,7 +634,8 @@ Este último taller resultó bastante más complicado de seguir que el resto de 
 
 Edit (29/04/2024 11:50):
 Tras intentar hacer el ejecutable para la aplicación en las prácticas me encontré con un problema a la hora de las dependencias con los archivos que ejecuto en segundo plano con subprocess al crear el .exe. Por lo tanto decidí cambiar el approach a la forma en la que estaba estructurando el código y usé threads. Revisé la explicación del taller de concurrencia y ahora ya lo comprendo mejor; Thread funciona igual a bajo nivel, pero THreadPoolExecutor es una herramienta para facilitar el proceso, que basicamente se encarga de hacer los joins, waits y asignación de hilos necesasrios de forma automática; entonces yo solo le digo la cantidad de workers (hilos) o no para que haga cpu_count+4 procesos simultaneos y queda todo muy sencillo y compacto:
-´´´python
+
+```python
 with ThreadPoolExecutor(max_workers=3) as executor:
         print("Comenzando captura de tráfico en segundo plano...")
         executor.submit(trafficScapy.start)
@@ -650,6 +651,6 @@ with ThreadPoolExecutor(max_workers=3) as executor:
 
         print("Recogiendo actualizaciones de SO y parches")
         executor.submit(sysinfo.sysinfoOSupd.start)
-´´´
+```
 
 ### Final sesión 1 (11:40)
