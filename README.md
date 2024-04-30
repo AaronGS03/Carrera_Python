@@ -654,3 +654,46 @@ with ThreadPoolExecutor(max_workers=3) as executor:
 ```
 
 ### Final sesión 1 (11:40)
+
+## Día 13 (30/04/2024): 
+
+### Sesión 1 (09:00)
+
+Taller Herramientas de Testing para Python
+
+- Test unitario: sirve para pruebas de valores concretos que se le definen. Usando PyTest.
+  
+```python
+# test_sum.py
+@pytest.mark.parametrize("test_input,expected", [(2,3,5), (3,4,7), (5,6,11)])
+def test_sum_is_working(a, b, result):
+ assert sum(a,b) == resul
+```
+
+- Property based test: sirve para probar funcionamiento con valores aleatorios que se le puedan pasar a una función. Usando Hypothesis. Los valores se decantan por usualmente problemáticos (overflow, 0,-1,...)
+
+```python
+@given(op1=st.integers(), op2=st.integers())
+def test_calculate_is_working(op1: int, op2: int):
+ assert sum([op1, op2]) == op1 + op2
+```
+
+- Contract testing: sirve para comprobar valores en el contrato en APIs. Usando Schematesis.
+
+```python
+schemathesis run http://localhost:8000/openapi.json
+```
+
+- Load testing: crea usuarios virtuales para probar la carga sobre la aplicación. Usando Locust
+
+```python
+class QuickstartUser(HttpUser):
+ wait_time = between(1, 2.5)
+ @task
+ def hello_world(self):
+ self.client.get("/hello_world")
+ def on_start(self):
+ self.client.post("/login", json={"username":"user", 
+"password":"1234"}
+```
+  
