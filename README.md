@@ -667,7 +667,7 @@ Taller Herramientas de Testing para Python
 # test_sum.py
 @pytest.mark.parametrize("test_input,expected", [(2,3,5), (3,4,7), (5,6,11)])
 def test_sum_is_working(a, b, result):
- assert sum(a,b) == resul
+ assert sum(a,b) == result
 ```
 
 - Property based test: sirve para probar funcionamiento con valores aleatorios que se le puedan pasar a una función. Usando Hypothesis. Los valores se decantan por usualmente problemáticos (overflow, 0,-1,...)
@@ -696,4 +696,9 @@ class QuickstartUser(HttpUser):
  self.client.post("/login", json={"username":"user", 
 "password":"1234"}
 ```
-  
+
+## Día 14 (06/04/2024): 
+
+### Sesión 1 (12:20)
+
+Taller Testing en Python
