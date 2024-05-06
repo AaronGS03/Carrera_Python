@@ -701,4 +701,21 @@ class QuickstartUser(HttpUser):
 
 ### Sesión 1 (12:20)
 
-Taller Testing en Python
+# Carrera_Python
+
+Proyecto fin de curso Carrera de Python aplicado a Machine Learning
+
+
+Curso:  ML supervisado con Scikit-learn
+
+#### Contenidos vistos:
+
+¿Como entrenar un modelo?
+
+- Introducción a Scikit-learn
+
+- Sintaxis básica
+  
+En este ejemplo trabaja con unos datos descargados, 40k likes. Los datos originales ya no están, estoy intentando trabajar con unos datos similares pero el tipo de información es ditinta, lo cual está presentando ciertos problemas...
+
+Esta semana el progreso es algo más escaso, el viernes tenía que presentar mi progreso en la univesidad y estuve aprentandole al trabajo cuando tenía tiempo así que dejé un poco de lado openWebinars... Esta semana espero terminarlo del todo de todas formas.
