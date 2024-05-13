@@ -733,3 +733,145 @@ Curso:  ML supervisado con Scikit-learn
 
 #### Contenidos vistos:
 
+**¿Como entrenar un modelo?**
+
+- Sintaxis básica
+  
+  Intenté seguir el ejemplo emulandolo con mis datos. El hizo un entrenamiento de modelo haciendo uso de número de likes por cantidad de followers y si el tweet tenía video, mediante un modelo lineal y de árbol de decisiones, y luego representó las prediccioens en un gráfico. Yo no tengo las columnas de followers ni si tienen video los datos, así que después de un rato de prueba y error con distintos valores, conseguí que me dibujase algo:
+
+(y: numero de shares, x: numero de likes)
+
+![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/14cd0850-6c32-485b-9088-175abf699f67)
+
+Resulta que estaba chocando mi cabeza contra un muro que explica en el siguiente apartado.
+
+
+- Requisitos mínimos
+
+ En este aparteado explica lo que se le mete en las coordenadas. Pues solo admite datos numéricos. En mis datos solo tengo numéricos los likes y shares.
+
+ **Pasos previos al entrenamiento**
+
+- Pasos previos a entrenar un modelo
+
+  Explica unos cuantos métodos para preparar la información, rellenar nulos, sustituír 0, seleccioanar y asignar valores a datos concretos.
+
+- Dividir en train y en test
+
+  Mediante el método train.test.split(datos, tamaño, factor aleatorio), podemos dividir los datos en un grupo para entrenamiento y otro para testing, cambiando el tamaño (0.7 = 70% de los datos para training, 30% para testing), es importante poner el random state a 0 para no sufrir alteraciones en los datos. Esta función también nos permite ordenar los datos (para escoger una región en concreto, por ejemplo, más antiguos), pero hay establecer en los parametros shuffle=False para que no los mezcle.
+
+- Pipeline
+
+- Funciones especiales para preparar los datos
+
+  Procesos de estandarización automáticos, como por ejemplo, pasar strings a valores numéricos, mediante encoder, o más bien, la función encoder:
+
+```python
+#Selecciono los datos
+data_location= 'MLwPython\\tweets.csv'
+
+pd.options.display.max_columns= 500
+
+tweet_data= pd.read_csv(data_location)
+
+
+# Divido los datos en train y test
+train, test = train_test_split(tweet_data, train_size=0.7, random_state=0)
+
+
+
+# Standarizamos los datos
+variables = ['language']
+
+encoder = preprocessing.OneHotEncoder(handle_unknown='ignore')
+encoder.fit(train[variables])
+print(encoder.categories_)
+print(pd.DataFrame(encoder.transform(train[variables]).toarray()))
+```
+
+Esto mostrará una lista con las categorías del enconder (idiomas que hay) y un array con cada tweet e idioma con 0 y 1 señalando el idioma:
+
+![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/8d16a6c3-43db-4bce-9f05-9d6333acca47)
+
+En caso de por ejemplo querer solo unas categorías, se le añade a los parametros de preprocessing.OneHotEncoder(category) tal que:
+
+```python
+languages = ['en', 'es', 'au']
+
+encoder = preprocessing.OneHotEncoder(categories=[languages], handle_unknown='ignore')
+```
+y esto devuelve:
+
+![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/8ddced55-556a-4f62-9683-b7a11afcc49d)
+
+- Creando un Pipeline
+
+ Crear un pipeline sirve para ejecutar una serie de ordenes sobre unos datos de forma aislada. Si quisiera crear una predicción según el número de likes y el número de shares, pero, además quiero hacerlo de unos idiomas en concreto; tendría que separar en dos pipelines, una con valores numéricos, los cuales voy a estandarizar con la función scaler, y luego otro pipelines con idiomas, los cuales hay que pasar por el encoder. Luego se juntan y se obtiene el resultado:
+
+```python
+
+# Divido los datos en train y test
+train, test = train_test_split(tweet_data, train_size=0.7, random_state=0)
+
+
+# Creo una pipeline con los datos numéricos (con una función de scaler, para estandarizarlos)
+numeric_variables = ['number_of_likes', 'number_of_shares']
+numeric_pipeline = Pipeline(
+    [
+        ('scaler', StandardScaler())
+    ]
+)
+
+# Creo una pipeline con los idiomas, con una función de enconder para convertir los datos no numéricos en valores de 0 y 1, y selecciono es y en solo 
+categoric_variables = ['language']
+languages = ['en', 'es']
+categoric_pipeline = Pipeline(
+    [
+        ('encoder', OneHotEncoder(categories=[languages], handle_unknown='ignore'))
+    ]
+)
+
+# Junto los pipelines
+preprocessing = ColumnTransformer(
+    [
+        ('numeric', numeric_pipeline, numeric_variables),
+        ('categorical', categoric_pipeline, categoric_variables)
+    ]
+)
+
+# Completo el pipeline total uniendo la regresión
+full_pipeline = Pipeline(
+    [
+        ('preprocessing', preprocessing),
+        ('regression', LinearRegression())
+    ]
+)
+
+
+
+X_variables = numeric_variables + categoric_variables
+y_variable = 'number_of_likes'
+
+full_pipeline.fit(train[X_variables], train[y_variable])
+
+test['prediction'] = full_pipeline.predict(test[X_variables])
+
+graph = (
+    pn.ggplot(test, pn.aes(x='number_of_likes', y='prediction')) 
+    + pn.geom_point()
+    + pn.scale_x_continuous(trans='log')
+    + pn.scale_y_continuous(trans='log')
+)
+```
+
+Resultado:
+
+![image](https://github.com/AaronGS03/Carrera_Python/assets/155577910/85e91841-4b53-4059-aaa5-a1e53b504306)
+
+**Modelos disponibles**
+
+- Introducción a los modelos de Scikit-learn
+
+- GLM
+
+- Near Neighbours
