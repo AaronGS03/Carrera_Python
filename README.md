@@ -720,9 +720,9 @@ En este ejemplo trabaja con unos datos descargados, 40k likes. Los datos origina
 
 
 
-## Día 15 (11/05/2024): 
+## Día 15 (13/05/2024): 
 
-### Sesión 1 (22:20)
+### Sesión 1 (09:00)
 
 # Carrera_Python
 
