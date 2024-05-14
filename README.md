@@ -918,3 +918,16 @@ Curso:  ML supervisado con Scikit-learn
 **Conclusión**
 
 Ya hice el examen del curso y está aprobado
+
+Curso: ML no supervisado
+
+#### Contenidos vistos:
+
+**Introducción**
+
+**¿Cómo entrenar un modelo?**
+
+- Introducción a Scikit-learn
+
+- Sintacis básica
+
