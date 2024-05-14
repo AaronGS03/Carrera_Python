@@ -881,3 +881,20 @@ Resultado:
 - Modelos basados en árboles
 
 - Redes neuronales
+
+## Día 16 (14/05/2024): 
+
+### Sesión 1 (09:00)
+
+# Carrera_Python
+
+Proyecto fin de curso Carrera de Python aplicado a Machine Learning
+
+
+Curso:  ML supervisado con Scikit-learn
+
+#### Contenidos vistos:
+
+**Evaluación de los resultados**
+
+- Introducción a la evaluación de resultados
