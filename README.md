@@ -875,3 +875,7 @@ Resultado:
 - GLM
 
 - Near Neighbours
+
+- SVM
+
+- Modelos basados en árboles
