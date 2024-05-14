@@ -902,3 +902,5 @@ Curso:  ML supervisado con Scikit-learn
 - Las diferentes métricas
 
 - Métodos visuales de evaluación
+
+- Calibración de la modalidad
