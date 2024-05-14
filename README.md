@@ -879,3 +879,5 @@ Resultado:
 - SVM
 
 - Modelos basados en árboles
+
+- Redes neuronales
