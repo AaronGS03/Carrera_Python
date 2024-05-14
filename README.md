@@ -904,3 +904,9 @@ Curso:  ML supervisado con Scikit-learn
 - Métodos visuales de evaluación
 
 - Calibración de la modalidad
+
+**Optimizar los modelos**
+
+- Optimización básica
+
+- Eligiendo los mejores features
