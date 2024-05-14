@@ -898,3 +898,5 @@ Curso:  ML supervisado con Scikit-learn
 **Evaluación de los resultados**
 
 - Introducción a la evaluación de resultados
+
+- Las diferentes métricas
