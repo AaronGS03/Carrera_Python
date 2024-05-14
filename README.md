@@ -900,3 +900,5 @@ Curso:  ML supervisado con Scikit-learn
 - Introducción a la evaluación de resultados
 
 - Las diferentes métricas
+
+- Métodos visuales de evaluación
