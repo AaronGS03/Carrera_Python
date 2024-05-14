@@ -910,3 +910,7 @@ Curso:  ML supervisado con Scikit-learn
 - Optimización básica
 
 - Eligiendo los mejores features
+
+- Optimización estructurada
+
+- Optimización de pipelines
