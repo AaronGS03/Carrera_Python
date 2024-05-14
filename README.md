@@ -929,5 +929,6 @@ Curso: ML no supervisado
 
 - Introducción a Scikit-learn
 
-- Sintacis básica
+- Sintaxis básica
 
+Hey, encontré los datos que usa de ejemplo... En el source original no están, pero los vi en otro de sus repositorios, parecen coincidir.
