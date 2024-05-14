@@ -914,3 +914,7 @@ Curso:  ML supervisado con Scikit-learn
 - Optimización estructurada
 
 - Optimización de pipelines
+
+**Conclusión**
+
+Ya hice el examen del curso y está aprobado
