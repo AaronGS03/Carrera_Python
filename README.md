@@ -932,3 +932,32 @@ Curso: ML no supervisado
 - Sintaxis básica
 
 Hey, encontré los datos que usa de ejemplo... En el source original no están, pero los vi en otro de sus repositorios, parecen coincidir.
+
+## Día 17 (20/05/2024): 
+
+### Sesión 1 (01:24)
+
+# Carrera_Python
+
+Proyecto fin de curso Carrera de Python aplicado a Machine Learning
+
+Curso:  ML no supervisado en Python
+
+
+**Clusterización con K-means**
+
+- Introducción a K-means
+
+- Visualizando los resultados
+
+- Evaluando los resultados
+
+**Preaparando los datos para K-means**
+
+- La preparación típica
+
+- Eligiendo y normalizando las variables (Parte 1)
+
+- Eligiendo y normalizando las variables (Parte 2)
+
+**Otros algoritmos para clusterización**
