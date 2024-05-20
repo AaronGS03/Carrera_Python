@@ -961,3 +961,39 @@ Curso:  ML no supervisado en Python
 - Eligiendo y normalizando las variables (Parte 2)
 
 **Otros algoritmos para clusterización**
+
+- DBSCAN
+
+- Clusterización Jerárquica
+
+**Casos de clusterización**
+
+- Detectando grupos de interés: Clusterización
+
+- Incorporando los resultados de un modelo
+
+**Reducción de dimensiones**
+
+- PCA
+
+- t-SNE
+
+**Casos de reducción de dimensiones**
+
+- Detectando grupos de interés: Reducción de dimensiones
+
+- Incorporando los resultados de un modelo: Reducción de dimensiones
+
+**Conclusión**
+
+- Resumen
+
+Ya hice el examen del curso, está aprobado
+
+Taller: ML con clasificadores lineales en Python y ML con modelos basados en árboles
+
+Esto son básicamente el curso de machine learning supervisado con scikit learn pero en videos únicos, usando un par de pasos más para aclarar ciertas explicaciones y desarrollando algunos casos.
+
+Taller: Reducción de dimensionalidad para ML en Python
+
+Y este taller vienen siendo los mismos puntos vistos en reducción de dimensionalidad en el curso de ML no supervisado
